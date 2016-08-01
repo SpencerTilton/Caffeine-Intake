@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Caffeine Intake</title>
+        <meta charset="UTF-8">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <button type="button" onclick="recordData()">Add Cup</button>
+        <script>
+            var caffeineInSystem;
+
+            function recordData() {
+                caffeine.addCup;
+                caffeine.viewCaffeine;
+            }
+
+            var caffeine = {
+                addCup : function() {
+                    caffeineInSytem += 100;
+                },
+                viewCaffeine = function() {
+                    document.getElementById("output").innerHTML = caffeineInSystem;
+                }
+            }
+        </script>
+        <p id="output"></p>
+    </body>
+</html>
