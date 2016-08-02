@@ -5,8 +5,11 @@
         <meta charset="UTF-8">
         <script src="index.js"></script>
     </head>
-    <body>
-        <button type="button" onclick="recordData()">Add Cup</button>
+    <body onload="startProgram()">
+        <button type="button" onclick="recordCup()">Add Cup</button>
+        <button type="button" onclick="recordCaffeine()">Manually Add Caffeine</button>
+        Caffeine Amount: <input type="text" id="caffeineInput" name="CaffeineAmount" value="100">
         <p id="output"></p>
+        <p id="output2"></p>
     </body>
 </html>
