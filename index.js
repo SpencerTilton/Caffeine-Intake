@@ -28,7 +28,9 @@ var caffeine = {
     },
 
     addCup: function (caffeineAmount) {
-        caffeineInSystem += caffeineAmount;
+        let oldCaf = caffeineInSystem;
+        let newCaf = caffeineInSystem + parseInt(caffeineAmount);
+        caffeineInSystem = newCaf;
     },
 
     viewCaffeine: function () {
